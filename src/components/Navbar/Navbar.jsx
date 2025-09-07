@@ -6,29 +6,25 @@ const Navbar = () => {
   return (
     <div className='bg-[#F40404] pt-[30px] pb-[30px]'>
         <Container>
-            <div className='justify-between'>
-                <Flex>
+            <Flex className='justify-between items-center'>
                 <div>
-                    <img src={logo} alt="" />
+                    <a href="#">
+                        <img src={logo} alt="" />
+                    </a>
                 </div>
-                <div className='text-[white]'>
-                    <Flex>
-                        <div>
-                            <ul className='flex space-x-[30px] text-[17px]'>
-                                    <li>Home</li>
-                                    <li>About</li>
-                                    <li>Services</li>
-                                    <li>Gallery</li>
-                                    <li>Blog</li>
-                            </ul>
-                        </div>
-                        <div className='ml-[72px]'>
-                            <button className='border-3 border-[white] pt-[13px] pb-[13px] pl-[32px] pr-[32px]'>CONTACT</button>
-                        </div>
+                <Flex className='items-center text-[white]'>
+                    <Flex className='space-x-[30px] text-[17px] list-none'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Services</a></li>
+                        <li><a href='#'>Gallery</a></li>
+                        <li><a href='#'>Blog</a></li>
                     </Flex>
-                </div>
+                    <div className='ml-[72px]'>
+                        <button className='cursor-pointer border-3 border-[white] pt-[13px] pb-[13px] pl-[32px] pr-[32px]'>CONTACT</button>
+                    </div>
                 </Flex>
-            </div>
+            </Flex>
 
         </Container>
 
