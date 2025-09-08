@@ -7,7 +7,7 @@ const Services = () => {
 
     <div>
       <Flex className="justify-between items-center">
-        <div className='w-[509px] p-[10px] ml-[30px]'>
+        <div className='w-[509px] p-[10px] ml-[380px]'>
           <h3 className='text-[80px] font-bold text-black'>Our Services</h3>
           <p className='text-[20px] font-medium'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </div>
