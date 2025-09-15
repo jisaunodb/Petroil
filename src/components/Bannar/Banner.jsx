@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../container/Container'
 import Flex from '../flex/Flex'
+import Button from '../Button/Button'
 
 const Banner = () => {
   return (
@@ -9,7 +10,8 @@ const Banner = () => {
         <Container>
             <div className='pt-[298px] pb-[280px] w-[842px] text-white'>
                 <h2 className="text-[64px] font-bold">We exist since 1975 on the oil and gas industry.</h2>
-                <button className='mt-[31px] bg-[#F40404] py-[13px] px-[40px] cursor-pointer'>LEARN MORE</button>
+                {/* <button className='mt-[31px] bg-[#F40404] py-[13px] px-[40px] cursor-pointer'>LEARN MORE</button> */}
+              <Button/>
             </div>
         </Container>
     </div>

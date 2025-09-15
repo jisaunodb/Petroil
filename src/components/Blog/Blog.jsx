@@ -2,6 +2,7 @@ import React from 'react'
 import { FaChevronRight } from "react-icons/fa";
 import Container from '../container/Container'
 import Flex from '../flex/Flex'
+import Button from '../Button/Button';
 const Blog = () => {
   return (
     <div className='bg-[#F0F0F0]'>

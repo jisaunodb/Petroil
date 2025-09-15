@@ -4,6 +4,7 @@ import About from './components/About/About'
 import Banner from './components/Bannar/Banner'
 import Biggest from './components/Biggest/Biggest'
 import Blog from './components/Blog/Blog'
+import Button from './components/Button/Button'
 import Contact from './components/Contact/Contact'
 import Container from './components/container/Container'
 import Flex from './components/flex/Flex'
@@ -28,6 +29,7 @@ function App() {
     <Blog/>
     <Contact/>
     <Footer/>
+    <Button/>
     <Container/>
     <Flex/>
   </div>
