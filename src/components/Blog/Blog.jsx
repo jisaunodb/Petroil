@@ -16,9 +16,9 @@ const Blog = () => {
                     <div className='z-[-1] absolute top-0 left-0 w-full h-full bg-black/60'></div>
                 </div>
                 <div className=' z-[1] relative bg-[url(./assets/Blog-img-2.png)] bg-cover bg-center bg-no-repeat px-[45px] pt-[75px] pb-[55px]'>
-                    <div className='w-[249px] text-white'>
+                    <div className='w-[249px] text-white group'>
                         <p className='text-[24px] font-bold'>lorem ipsum dolor <br/>sit amet <br/>consectetur <br/>adipiscing elit sed<br/> do eiusmod.</p>
-                        <button className='mt-[52px] bg-white/50 py-[13px] px-[40px] cursor-pointer'>Read more</button>
+                        <button className='group-hover: hover:duration-300 hover:ease-in hover:bg-transparent border hover:border-1 hover:border-white/50 border-white/50 mt-[52px] bg-white/50 py-[13px] px-[40px] cursor-pointer'>Read more</button>
                     </div>
                     <div className='z-[-1] absolute top-0 left-0 w-full h-full bg-black/60'></div>
                 </div>

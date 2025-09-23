@@ -8,8 +8,8 @@ const Banner = () => {
     <div className="z-[1] relative bg-[url(./assets/bannar-img.png)] w-full bg-cover bg-center bg-no-repeat">
         <div className="z-[-1] absolute top-0 left-0 w-full h-full bg-black/60"></div>
         <Container>
-            <div className='pt-[298px] pb-[280px] w-[842px] text-white'>
-                <h2 className="text-[64px] font-bold">We exist since 1975 on the oil and gas industry.</h2>
+            <div className='pt-[80px] md:pt-[298px] pb-[80px] md:pb-[280px] w-[400pxpx] md:w-[842px] text-white'>
+                <h2 className="text-[30px] md:text-[64px] font-bold">We exist since 1975 on the oil and gas industry.</h2>
                 {/* <button className='mt-[31px] bg-[#F40404] py-[13px] px-[40px] cursor-pointer'>LEARN MORE</button> */}
               <Button/>
             </div>
