@@ -15,7 +15,7 @@ const Header = () => {
                         <IoMailUnreadOutline className='text-[15px] md:text-[25px]'/>
                         <a href="mailto:mail@yourcompany.com" className='text-[10px] md:text-[12px] '>mail@yourcompany.com</a>
                     </div>
-                    <div className="relative after:content-[''] after:absolute after:top-1 after:left-[-22px] after:w-[2px] after:h-[25px] after:bg-[#5C6A92] flex items-center space-x-[5px]">
+                    <div className="relative after:content-[''] after:absolute after:top-0.5 after:left-[-22px] md:after:w-[2px] after:w-[0] after:h-[25px] after:bg-[#5C6A92] flex items-center space-x-[5px]">
                         <LuPhoneCall className='text-[15px] md:text-[25px]'/>
                         <a href="tel:+896 120 5889" className='text-[10px] md:text-[12px]'>+896 120 5889 (Toll free)</a>
                     </div>

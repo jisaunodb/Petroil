@@ -6,13 +6,14 @@ import { FiMenu } from "react-icons/fi";
 import { RiCloseLargeLine } from "react-icons/ri";
 
 
+
 const Navbar = () => {
     const [show, setshow] = useState(false)
 
-    const clickMe =()=>{
-        setshow(!show)
+    // const clickMe =()=>{
+    //     setshow(!show)
 
-    }
+    // }
   return (
     <div className='bg-[#F40404] pt-[10px] md:pt-[30px] pb-[10px] md:pb-[30px] font-primary'>
         <Container>
@@ -24,52 +25,42 @@ const Navbar = () => {
                         </a>
                     </div>
                 </div>
-                    <div className='md:hidden'>
+                    <div className='md:hidden relative'>
                         {
-                            show ? <FiMenu onClick={clickMe} className='transition
-                             text-[#fff]'/> : <div className=' absolute right-[10px]  top-18 z-99 bg-amber-600/50 p-[10px] w-[200px] h-[300px]'>
-                                <div className='flex justify-end'>
-                                    <RiCloseLargeLine onClick={clickMe} className='text-[#fff] text-right'/>
-                                </div>
-                                <Flex className='items-center text-[white]  md:block'>
-                                    <Flex className=' space-x-[30px] text-[17px] list-none'>
-                                        <li><a href='#'>Home</a></li>
-                                        <li><a href='#'>About</a></li>
-                                        <li><a href='#'>Services</a></li>
-                                        <li><a href='#'>Gallery</a></li>
-                                        <li><a href='#'>Blog</a></li>
-                                    </Flex>
-                                    <div className='ml-[0px] md:ml-[72px] mt-[20px] md:mt-auto'>
-                                        <button className='cursor-pointer border-3 ml-[] border-[white] md:pt-[13px] pt-[5px] md:pb-[13px] pb-[5px] md:pl-[32px] pl-[15px] md:pr-[32px] pr-[15px] text-[10px] md:text-[16px] font-semibold'>CONTACT</button>
-                                    </div>
-                                </Flex>
-                            </div>
 
+
+                    show ?
+                     <div className='  flex items-start absolute top-[35px] right-[0] z-10 bg-red-500 p-[20px]'>
+
+                        <Flex className=' space-x-[30px] text-[17px] list-none font-semibold'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Services</a></li>
+                        <li><a href='#'>Gallery</a></li>
+                        <li><a href='#'>Blog</a></li>
+                        </Flex>
+                        {/* <RiCloseLargeLine onClick={clickMe} className='text-white'/> */}
+                     </div>
+                    :
+                            ""
                         }
-                        {/* {
-                            show ? (
-                                <Flex className='items-center text-[white]  md:block'>
-                                    <Flex className=' space-x-[30px] text-[17px] list-none'>
-                                        <li><a href='#'>Home</a></li>
-                                        <li><a href='#'>About</a></li>
-                                        <li><a href='#'>Services</a></li>
-                                        <li><a href='#'>Gallery</a></li>
-                                        <li><a href='#'>Blog</a></li>
-                                    </Flex>
-                                    <div className='ml-[0px] md:ml-[72px] mt-[20px] md:mt-auto'>
-                                        <button className='cursor-pointer border-3 ml-[] border-[white] md:pt-[13px] pt-[5px] md:pb-[13px] pb-[5px] md:pl-[32px] pl-[15px] md:pr-[32px] pr-[15px] text-[10px] md:text-[16px] font-semibold'>CONTACT</button>
-                                    </div>
-                                </Flex>
-                            )
+                        <div>
+
+
+                        {
+                            show ?
+                            <RiCloseLargeLine onClick={()=> setshow (!show)}className='text-white'/>
                             :
-                            ("")
-                        } */}
-                            </div>
-                                {/* {
-                                    show ? <FiMenu onClick={()=> setshow(!show)} />: <RiCloseLargeLine onClick={()=> setshow(!show)}/>
-                                } */}
-                             {/* <FiMenu onClick={clickMe} className='transition
-                             text-[#fff]'/> */}
+                            <FiMenu onClick={()=> setshow (!show)}  className='text-white'/>
+                        }
+                        {/* <FiMenu onClick={clickMe} className='text-white'/> */}
+
+                         </div>
+
+
+                    </div>
+
+
 
 
                 <Flex className='items-center text-[white] hidden  md:block'>

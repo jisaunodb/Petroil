@@ -9,11 +9,11 @@ const Logos = () => {
   return (
     <div>
         <Container>
-            <Flex className="py-[116px] justify-between items-center">
-                <div><img src={logo1} alt="" /></div>
-                <div><img src={logo2} alt="" /></div>
-                <div><img src={logo3} alt="" /></div>
-                <div><img src={logo4} alt="" /></div>
+            <Flex className="md:py-[116px] py-[30px] justify-between items-center">
+                <div className='mx-auto md:mx-0 md:w-auto w-[150px]'><img src={logo1} alt="" /></div>
+                <div className='mx-auto md:mx-0 md:w-auto w-[150px]'><img src={logo2} alt="" /></div>
+                <div className='mx-auto md:mx-0 md:w-auto w-[150px]'><img src={logo3} alt="" /></div>
+                <div className='mx-auto md:mx-0 md:w-auto w-[150px]'><img src={logo4} alt="" /></div>
             </Flex>
         </Container>
     </div>

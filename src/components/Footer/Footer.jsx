@@ -14,25 +14,25 @@ import Cart2 from "../../assets/Cert2.png"
 
 const Footer = () => {
   return (
-    <div className='bg-[#1F1F1F]'>
+    <div className='bg-[#1F1F1F] font-primary'>
 
-        <Container className="pt-[150px] pb-[280px]">
+        <Container className="md:pt-[150px] pt-[50px] pb-[50px] md:pb-[280px]">
             <Flex className="items-center text-white justify-between">
                 <div className='mr-[145px]'>
                     <img src={Flogo} alt="" />
-                    <Flex className="text-white items-center gap-[5px]  mt-[34px]">
+                    <Flex className= "flex text-white items-center gap-[5px]  mt-[34px]">
                         <IoMailUnreadOutline/>
                         <a href="#">mail@yourcompany.com</a>
                     </Flex>
-                    <Flex className="text-white items-center gap-[5px] mt-[15px]">
+                    <Flex className="flex text-white items-center gap-[5px] mt-[15px]">
                         <LuPhoneCall/>
                         <a href="#">+896 120 5889 (Toll free)</a>
                     </Flex>
-                    <Flex className="text-white items-center gap-[5px] mt-[15px]">
+                    <Flex className="flex text-white  gap-[5px] mt-[15px]">
                         <FaMapLocationDot/>
                         <a href="#">101 Baker Street, New York, USA, 12345</a>
                     </Flex>
-                    <Flex className="items-center gap-[12px] mt-[34px]">
+                    <Flex className="flex items-center gap-[12px] mt-[34px]">
                         <img src={facebook} alt="" />
                         <img src={Linkedin} alt="" />
                         <img src={Twitter} alt="" />
@@ -40,7 +40,7 @@ const Footer = () => {
                     </Flex>
                 </div>
 
-                <Flex className="gap-[48px]">
+                <Flex className="mt-[10px] md:mt-0 flex gap-[20px] md:gap-[48px]">
                     <div className='w-[173px]'>
                         <h6 className='font-bold'>Company</h6>
                         <ul className='mt-[21px]'>
@@ -71,7 +71,7 @@ const Footer = () => {
         </Container>
         <div className='bg-[#282828]'>
             <Container>
-                <p className='py-[42px] text-[#6C6C6C]'>© Copyright 2024 by AltDesain Studio – All right reserved.</p>
+                <p className='text-[12px] md:text-[16px] py-[20px] md:py-[42px] text-[#6C6C6C]'>© Copyright 2024 by AltDesain Studio – All right reserved.</p>
             </Container>
         </div>
     </div>
