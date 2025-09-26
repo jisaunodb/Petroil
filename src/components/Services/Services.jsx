@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className='font-primary mt-[20px] md:mt-0'>
 
-    <div className='px-[20px] md:px-0'>
+    <div className='px-[10px] md:px-0'>
       <Flex className="justify-between items-center">
         <div className=' md:w-[50%]'>
           <div className=' flex justify-end md:mr-[129px]'>

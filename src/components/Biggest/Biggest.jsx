@@ -9,17 +9,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Pagination } from 'swiper/modules';
 
-// const Biggest = () => {
-//     var settings = {
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//      gap: '20px',
-//   };
-export default function App() {
+//
+  export default function App() {
   return (
     <div className='font-primary'>
         <Container>
@@ -41,28 +32,69 @@ export default function App() {
 
 
 
-    <Swiper
+    {/* <Swiper
     //   spaceBetween={50}
       slidesPerView={4}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-
-
     >
-      <SwiperSlide><div className='bg-[url(./assets/biggest-img-1.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
-      </SwiperSlide>
-      <SwiperSlide><div className='bg-[url(./assets/biggest-img-2.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
-      </SwiperSlide>
-      <SwiperSlide><div className='bg-[url(./assets/biggest-img-3.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
-      </SwiperSlide>
-      <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
-      </SwiperSlide>
-      <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
-      </SwiperSlide>
-      <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
-      </SwiperSlide>
+      <div className='px-[10px]'>
 
-    </Swiper>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-1.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-2.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-3.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center md:w-full w-[80px] h-[100px] md:h-[426px]'></div>
+        </SwiperSlide>
+      </div>
+    </Swiper> */}
+  <Swiper
+        slidesPerView={4}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          375:{
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-1.png)] bg-cover bg-center w-full h-[200px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-2.png)] bg-cover bg-center w-full h-[200px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-3.png)] bg-cover bg-center w-full h-[200px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center w-full h-[200px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center w-full h-[200px] md:h-[426px]'></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='bg-[url(./assets/biggest-img-4.png)] bg-cover bg-center w-full h-[200px] md:h-[426px]'></div>
+        </SwiperSlide>
+      </Swiper>
 
 
 

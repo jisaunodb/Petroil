@@ -4,7 +4,7 @@ import Flex from '../flex/Flex'
 const Contact = () => {
   return (
     <div>
-        <div className='font-primary bg-[url(./assets/Maps.png)] bg-cover bg-center bg-no-repeat w-full h-[300px] md:h-[450px]'></div>
+        <div className=' font-primary bg-[url(./assets/Maps.png)] bg-cover bg-center bg-no-repeat w-full h-[300px] md:h-[450px]'></div>
         <div className='bg-[#F40404]'>
             <Container>
                 <Flex className="text-center md:text-left items-center justify-between text-white py-[20px] md:py-[45px]">

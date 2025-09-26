@@ -1,4 +1,5 @@
 
+import Slider from 'react-slick'
 import './App.css'
 import About from './components/About/About'
 import Banner from './components/Bannar/Banner'
@@ -13,6 +14,7 @@ import Header from './components/Header/Header'
 import Logos from './components/Logos/Logos'
 import Navbar from './components/Navbar/Navbar'
 import Services from './components/Services/Services'
+
 
 function App() {
 

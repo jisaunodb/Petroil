@@ -30,15 +30,18 @@ const Navbar = () => {
 
 
                     show ?
-                     <div className='  flex items-start absolute top-[35px] right-[0] z-10 bg-red-500 p-[20px]'>
+                     <div className='  flex items-start absolute top-[35px] right-[0] z-10 bg-[#CDA13D] p-[20px]'>
 
-                        <Flex className=' space-x-[30px] text-[17px] list-none font-semibold'>
+                        <Flex className=' block space-x-[30px] text-[17px] list-none font-semibold'>
                         <li><a href='#'>Home</a></li>
                         <li><a href='#'>About</a></li>
                         <li><a href='#'>Services</a></li>
                         <li><a href='#'>Gallery</a></li>
                         <li><a href='#'>Blog</a></li>
+                        <button className='mt-[10px] md:mt-0 cursor-pointer border-2 md:border-3 ml-[] border-[white] pt-[8px] md:pt-[13px] pb-[8px] md:pb-[13px] pl-[20px] md:pl-[32px] pr-[20px] md:pr-[32px] text-[12px] md:text-[16px] font-semibold'>CONTACT</button>
                         </Flex>
+
+
                         {/* <RiCloseLargeLine onClick={clickMe} className='text-white'/> */}
                      </div>
                     :
